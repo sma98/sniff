@@ -1,4 +1,5 @@
 import scapy.all as scapy
+NETWORK_ADAPTER = 'Wi-Fi'
 
 
 def sniff(interface):
@@ -9,4 +10,4 @@ def process_sniffed_packet(packet):
     print(packet)
 
 
-sniff('Wi-Fi')
+sniff(NETWORK_ADAPTER)
